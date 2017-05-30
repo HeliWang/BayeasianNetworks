@@ -80,7 +80,7 @@ def inference(factorList, queryVariables, orderedListOfHiddenVariables, evidence
     for idx, factor in enumerate(factorList):
         sum = multiply(sum, factor)
         
-    return sum
+    return normalize(sum)
     
 def test():
     unitTest = False
